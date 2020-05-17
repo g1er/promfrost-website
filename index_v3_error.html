@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>PTK v3.0</title>
+
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+
+	<link rel="stylesheet" type="text/css" href="jQuery-mousewheel/jQuery-mousewheel/jquery.mCustomScrollbar.min.css">
+
+	<link rel="stylesheet" type="text/css" href="style_v3.css">
+</head>
+
+<body onload='funcStart()'>
+
+	<header>
+		<div class="body_container header_block">
+			<div class="logo_block">
+				<img src="images/logo.png" class="header_logo" />
+			</div>
+			<div class="header_text">Промышленный холод под ключ <br> Ремонт и обслуживание</div>
+			<div class="header_text_right"><span class="header_num">+998 90 973-62-34</span><br>г.Ташкент, Сергелийский район, Проектная улица, Г-90</div>
+		</div>
+	</header>
+
+	<div class="top_pic">
+		<div class="body_container top_pic_text">
+			<div class="child1">
+				<h1>Услуги по строительству и обслуживанию промышленных холодильников и морозильных камер</h1>
+				<p>Выезд на место, осмотр, диагностика, срочный ремонт</p>
+				<button type="button" class="but" data-toggle='modal' data-target='#callOrder'>Оставить заявку</button>
+			</div>
+			<div class="child2">
+				<h4>При сложной поломке возможен вывоз отдельных рабочих агрегатов на нашу ремонтную базу</h4>
+			</div>
+			
+		</div>
+	</div>
+
+	<!-- Pop-up modal window to order a call -->
+
+	<div id="callOrder" class="modal fade" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h3 class="modal-title" style="color:black">Оставьте ваши данные</h3>
+							<button class="close" data-dismiss="modal">x</button>
+						</div>
+						<div class="modal-body">
+							<form name="callback" action="callback.php" method="post">
+								<div class="form-group">
+									<label for="username">Имя</label>
+									<input name="username" type="text" class="form-control" id="username" placeholder="Укажите ваше имя">
+								</div>
+								<div class="form-group">
+									<label for="phone">Номер телефона</label>
+									<input name="phone" type="text" class="form-control" id="phone" placeholder="Укажите ваш номер телефона с кодом">
+								</div>
+								<div class="form-group">
+									<label for="notice">Примечание или комментарий</label>
+									<textarea name="notice" rows="5" class="form-control" id="notice" placeholder="Укажите здесь дополнительную информацию (желаемое время звонка, ожидаемое предложение и т.д.)"></textarea>
+								</div>
+								<button class="btn btn-success" type="submit">Отправить</button>
+								<button class="btn btn-danger" data-dismiss="modal">Закрыть</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+	<!-- End -->
+
+	<section>
+		<div id="suggestion" class="body_container">
+			<h2>МЫ ПРЕДЛАГАЕМ</h2>
+				<div class="suggest">
+					<div class="suggest_list"><img src="images/fr.cam.png" /> Морозильные и холодильные камеры с нуля под ключ</div>
+					<div class="suggest_list"><img src="images/calculations.png" />Технические рассчеты и подбор оборудования</div>
+					<div class="suggest_list"><img src="images/repair.png" />Полный ремонт и реставрация</div>
+					<div class="suggest_list"><img src="images/diagnostics.png" />Диагностика системы и отдельных узлов и деталей</div>
+					<div class="suggest_list"><img src="images/warranty.png" />Гарантийное и постгарантийное техобслуживание</div>
+					<div class="suggest_list"><img src="images/extraworks.png" />Дополнительные сопутствующие работы</div>
+				</div>
+		</div>
+
+		<div id="repairs" class="body_container">
+			<h2>ЧТО МЫ РЕМОНТИРУЕМ?</h2>
+			<p>Сложный ремонт производим на оборудованной ремонтной базе площадью 1000м²</p>
+				<div class="repair">
+					<div class="repair_list"><img src="images/holodilnye-kompressory.jpg" /><u>ХОЛОДИЛЬНЫЕ АГРЕГАТЫ</u><br>Компрессоры различных типов и мощности (замена рабочих частей, электрообмотки, уплотнительных прокладок и т.д.)</div>
+					<div class="repair_list"><img src="images/condens.jpg" /><u>ТЕПЛООБМЕННОЕ ОБОРУДОВАНИЕ</u><br>Конденсаторы и испарители (поиск утечки, замена перетертых или пережатых магистралей, замена отдельных участков гребенки и т.д.)</div>
+					<div class="repair_list"><img src="images/controls.jpg" /><u>ЭЛЕКТРИКА И ЭЛЕКТРОНИКА</u><br>Электрощиты и электронные пульты управления (диагностика, замена деталей, сборка с нуля под ключ и т.д.)</div>
+					<div class="repair_list"><img src="images/chiller1.png" /><u>ЧИЛЛЕРЫ</u><br>Полная диагностика, замена отдельных узлов и агрегатов, датчиков и клапанов, наладка электрики и электроники, реставрация и т.д.</div>
+				</div>
+		</div>
+
+		<div id="quality" class="body_container">
+			<h2>РЕМОНТ БЫСТРО И КАЧЕСТВЕННО</h2>
+			<p>Качественное выполнение сервисных и ремонтных работ обуславливается не только квалификацией персонала и используемым оборудованием, но и наличием богатого опыта в данной сфере.</p>
+				<div class="qual">
+					<div class="qual_list">
+							<img src="images/spareparts.jpg" />
+					<span class="fixed_head"><p><b>Оригинальные запчасти</b></p></span><hr>При ремонте и монтаже мы используем только проверненные временем и опытом запчасти от ведущих брендов и производителей оборудования</div>
+					<div class="qual_list">
+							<img src="images/min_termsr2.jpg" />
+					<span class="fixed_head"><p><b>Минимальные сроки</b></p></span><hr>Мобильные бригады, укомплектованные необходимым оборудованием, всегда готовы оперативно выехать на место для определения и решения проблемы
+					</div>
+					<div class="qual_list">
+							<img src="images/comfort_1.jpg" />
+					<span class="fixed_head"><p><b>Выгодные условия</b></p></span><hr>К каждому клиенту мы подходим индивидуально и всегда готовы обсудить отдельные условия, исходя из особенностей конкретного случая</div>
+				</div>
+		</div>
+
+		<div id="clients" class="body_container">
+			<h3>Крупные клиенты, с которыми мы работаем</h3>
+				<div class="clients">
+					<div class="clients_list" id="md">
+							<img src="images/md.png" />
+					</div>
+					<div class="clients_list">
+							<img src="images/vkusnyasha.jpg" />
+					</div>
+					<div class="clients_list">
+							<img src="images/ao.png" />
+					</div>
+					<div class="clients_list">
+							<img src="images/korzinka.jpg" />
+					</div>
+					<div class="clients_list">
+							<img src="images/uzavto.jpg" />
+					</div>
+				</div>
+		</div>
+
+		<div id="replace" class="body_container">
+			<h2>НЕ МОЖЕТЕ ОСТАНАВЛИВАТЬ РАБОТУ?</h2>
+			<p>Мы займемся вашим оборудованием.<br>А на время ремонта подберем вам альтернативный агрегат для исключения простоя работы</p>
+					<div class="replace_list">
+							<img src="images/replace.jpg" />
+					</div>
+		</div>
+
+		<div id="order" class="body_container">
+			<h2>Для оформления заказа заполните форму</h2>
+				<div class="order_btn">
+					<button type="button" class="but2" data-toggle='modal' data-target='#callOrder'>Оставить заявку</button>
+				</div>
+		</div>
+
+		<div id="gallery" class="body_container">
+			<h2>Галлерея</h2>
+			<p>Промышленный холод в шаговой доступности!</p>
+				<div class="gallery_block">
+					<div class="big_pic" id="full_img">
+						<img src="images/gallery/large/1.jpg" />
+					</div>
+
+					<div class="thumbs_list">
+						<img src="images/gallery/small/1.jpg" alt="pic1" onclick="imageChange(1)" />
+						<img src="images/gallery/small/2.jpg" alt="pic2" onclick="imageChange(2)" />
+						<img src="images/gallery/small/3.jpg" alt="pic3" onclick="imageChange(3)" />
+						<img src="images/gallery/small/4.jpg" alt="pic4" onclick="imageChange(4)" />
+						<img src="images/gallery/small/5.jpg" alt="pic5" onclick="imageChange(5)" />
+						<img src="images/gallery/small/6.jpg" alt="pic6" onclick="imageChange(6)" />
+						<img src="images/gallery/small/7.jpg" alt="pic7" onclick="imageChange(7)" />
+						<img src="images/gallery/small/8.jpg" alt="pic8" onclick="imageChange(8)" />
+						<img src="images/gallery/small/9.jpg" alt="pic9" onclick="imageChange(9)" />
+						<img src="images/gallery/small/10.jpg" alt="pic10" onclick="imageChange(10)" />
+						<img src="images/gallery/small/11.jpg" alt="pic11" onclick="imageChange(11)" />
+						<img src="images/gallery/small/12.jpg" alt="pic12" onclick="imageChange(12)" />
+						<img src="images/gallery/small/13.jpg" alt="pic13" onclick="imageChange(13)" />
+					</div>
+				</div>
+		</div>
+
+		<div id="any_questions">
+			<div class="any">
+				<h1>Остались вопросы?</h1>
+				<p>Оставьте заявку на нашем сайте или позвоните по телефону +998 90 973-62-34</p>
+				<button type="button" class="but" data-toggle='modal' data-target='#callOrder'>Оставить заявку</button>
+				<h3>Наш специалист ответит на все Ваши вопросы!</h3>
+			</div>
+		</div>
+
+		<div id="contact_us">
+			<div class="map">
+				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A98982bfbd13290c4d9a17d191264df92cb71cba9b1160964e49c79fe767af5a4&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+			</div>
+
+			<div class="contacts">
+				<div class="bglayer">
+					<div class="text">
+						<h2>Наши контакты</h2>
+						OOO "Progress-Tehno Klimat"
+						<br />
+						Адрес: г.Ташкент, Сергелийский район, Проектная улица, Г-90
+						<br />
+						Телефон: +998 90 973-62-34
+						<br />
+						E-mail: delfin0207@mail.ru
+						<br />
+						График работы: с 10:00 до 19:00 (Пн-Пт), с 10:00 до 15:00 (Сб)
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="body_container footer_block">
+			<div class="footer_logo_block">
+				<img src="images/logo.png" class="footer_logo" />
+			</div>
+
+			<div class="footer_text_right">OOO "Progress-Tehno Klimat"<br>+998 90 973-62-34<br><span id="years"></span></div>
+		</div>
+
+		
+	</footer>
+
+	<!-- Scripts	 -->
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+
+	<!-- Gallery script -->
+	<script language="javascript">
+		function imageChange(num) {
+			var fullImg = document.getElementById('full_img');
+			fullImg.innerHTML = "<img src=images/gallery/large/" + num + ".jpg>";
+		}
+	</script>
+	<!-- End -->
+
+	<!-- jQuery-Mousewheel plugin -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="jQuery-mousewheel/jQuery-mousewheel/jquery.mCustomScrollbar.min.js"></script>
+	<script type="text/javascript" src="jQuery-mousewheel/jQuery-mousewheel/jquery.mousewheel.min.js"></script>
+
+	<script type="text/javascript">
+		$(window).load(function(){
+
+		$(".thumbs_list").mCustomScrollbar({
+
+			axis:"x",
+			theme:"dark-thin",
+			autoExpandScrollbar:true,
+			autoHideScrollbar:true,
+			contentTouchScroll:20,
+			advanced:{autoExpandHorizontalScroll:true}
+		});
+
+		});
+	</script>
+	<!-- End -->
+
+	<script type="text/javascript">
+		// Sets current year in footer
+
+		function getYear(){
+			var par = document.getElementById('years');
+			var newYear = new Date();
+			var currentYear = newYear.getFullYear();
+			par.innerText = "2007-" + currentYear + "г";
+		}
+		// End
+
+		function sendFail(){
+			alert("Во время отправки заявки произошла ошибка!");
+		}
+
+		function funcStart(){
+			getYear();
+			sendFail();
+		}
+	</script>
+	<!-- End -->
+
+</body>
+</html>
