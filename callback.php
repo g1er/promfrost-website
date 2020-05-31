@@ -16,13 +16,22 @@
 	$phone = trim($phone);
 	$notice = trim($notice);
 
-	$message = "Здравствуйте!<br /><br />У вас новая заявка с Вашего сайта.<br />Имя: <b>$name</b><br />Телефон: <b>$phone</b><br />Примечание: <b>$notice</b>";
+	$to = "delfin0207@mail.ru";
+	$subject = "Новая заявка";
+	$subject = "=?utf-8?B?".base64_encode($subject)."?=";
+	$headers = "From: Progress-Tehno Klimat\r\nContent-type: text/html charset=utf-8\r\n";
+	$message = "Здравствуйте!
+	У вас новая заявка с Вашего сайта.
+	
+	Имя: $name
+	Телефон: $phone
+	Примечание: $notice";
 
 	if (mail($to, $subject, $message))
 	{
-		header ("Location: index_v3_success.html");
+		header ("Location: index_success.html");
 	} else {
-		header ("Location: index_v3_error.html");
+		header ("Location: index_error.html");
 	}
 	exit;
 ?>

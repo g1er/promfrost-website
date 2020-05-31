@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>PTK v3.0</title>
+	<title>PTK</title>
 
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -11,10 +11,10 @@
 
 	<link rel="stylesheet" type="text/css" href="jQuery-mousewheel/jQuery-mousewheel/jquery.mCustomScrollbar.min.css">
 
-	<link rel="stylesheet" type="text/css" href="style_v3.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body onload='funcStart()'>
+<body onload='getYear()'>
 
 	<header>
 		<div class="body_container header_block">
@@ -104,11 +104,11 @@
 							<img src="images/spareparts.jpg" />
 					<span class="fixed_head"><p><b>Оригинальные запчасти</b></p></span><hr>При ремонте и монтаже мы используем только проверненные временем и опытом запчасти от ведущих брендов и производителей оборудования</div>
 					<div class="qual_list">
-							<img src="images/min_termsr2.jpg" />
+							<img src="images/min_terms.jpg" />
 					<span class="fixed_head"><p><b>Минимальные сроки</b></p></span><hr>Мобильные бригады, укомплектованные необходимым оборудованием, всегда готовы оперативно выехать на место для определения и решения проблемы
 					</div>
 					<div class="qual_list">
-							<img src="images/comfort_1.jpg" />
+							<img src="images/comfort.jpg" />
 					<span class="fixed_head"><p><b>Выгодные условия</b></p></span><hr>К каждому клиенту мы подходим индивидуально и всегда готовы обсудить отдельные условия, исходя из особенностей конкретного случая</div>
 				</div>
 		</div>
@@ -231,6 +231,16 @@
 
 	<!-- Gallery script -->
 	<script language="javascript">
+		// Pre-loading Gallery's big pictures
+		var imgArr = new Array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13);
+		function listArray(){
+			for (i=0; i<imgArr.length; i++){
+				imgArr[i] = new Image();
+				imgArr[i].src = 'images/gallery/large/' + (i+1) + '.jpg';
+		 	}
+	 	}
+		listArray();
+
 		function imageChange(num) {
 			var fullImg = document.getElementById('full_img');
 			fullImg.innerHTML = "<img src=images/gallery/large/" + num + ".jpg>";
@@ -260,24 +270,14 @@
 	</script>
 	<!-- End -->
 
+	<!-- Setting current year in footer -->
 	<script type="text/javascript">
-		// Sets current year in footer
+		var par = document.getElementById('years');
 
 		function getYear(){
-			var par = document.getElementById('years');
 			var newYear = new Date();
 			var currentYear = newYear.getFullYear();
 			par.innerText = "2007-" + currentYear + "г";
-		}
-		// End
-
-		function sendFail(){
-			alert("Во время отправки заявки произошла ошибка!");
-		}
-
-		function funcStart(){
-			getYear();
-			sendFail();
 		}
 	</script>
 	<!-- End -->

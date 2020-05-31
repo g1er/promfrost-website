@@ -11,7 +11,7 @@
 
 	<link rel="stylesheet" type="text/css" href="jQuery-mousewheel/jQuery-mousewheel/jquery.mCustomScrollbar.min.css">
 
-	<link rel="stylesheet" type="text/css" href="style_v3.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body onload='funcStart()'>
@@ -261,7 +261,7 @@
 	<!-- End -->
 
 	<script type="text/javascript">
-		// Set current year in footer
+		// Sets current year in footer
 
 		function getYear(){
 			var par = document.getElementById('years');
@@ -271,15 +271,16 @@
 		}
 		// End
 
-		function sendOk(){
-			alert("Заявка успешно отправлена");
+		function sendFail(){
+			alert("Во время отправки заявки произошла ошибка!");
 		}
 
 		function funcStart(){
 			getYear();
-			sendOk();
+			sendFail();
 		}
 	</script>
+	<!-- End -->
 
 </body>
 </html>

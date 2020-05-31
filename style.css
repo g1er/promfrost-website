@@ -49,42 +49,34 @@ button, button:active, button:focus{
 	justify-content: space-between;
 }
 .header_logo{
-	/*margin-left: 20px;*/
 	margin-top: 35px;
 }
 .header_text{
-	/*display: inline-block;*/
-	/*vertical-align: top;*/
 	margin-top: 30px;
 	margin-left: 3%;
 	font-size: 1.1rem;
 }
 .header_text_right{
-	/*display: inline-block;*/
-	/*vertical-align: top;*/
 	text-align: right;
 	margin-top: 30px;
-	/*float: right;*/
 }
 .header_num{
 	font-size: 1.8rem;
 }
 .top_pic{
 	height: 500px;
-	background: url(images/main_top.jpg) center no-repeat;
+	background: url(images/main_top_pic.jpg) center no-repeat;
 	background-size: cover;
 	overflow: hidden;
 }
 .top_pic_text{
 	height: 87%;
-	background-color: rgba(0, 0, 0, 0.7);
+	background-color: rgba(0, 0, 0, .55);
 	margin: 3% auto;
 	color: #fff;
 	text-align: center;
 	display: flex;
 	flex-wrap: wrap;
-	/*flex-direction: column;*/
-	/*justify-content: space-between;*/
 }
 .top_pic_text h1{
 	font-family: "Book Antiqua";
@@ -122,9 +114,6 @@ button, button:active, button:focus{
 .child2{
 	flex-grow: 1;
 }
-/*#callOrder .modal-body{
-	box-sizing: border-box;
-}*/
 #suggestion{
 	margin-top: 40px;
 }
@@ -165,10 +154,8 @@ button, button:active, button:focus{
 	display: flex;
 	justify-content: space-around;
 	font-size: 1.2em;
-	/*flex-wrap: wrap;*/
 }
 .repair_list{
-	/*display: inline-block;*/
 	width: 22%;
 	max-width: 200px;
 	vertical-align: top;
@@ -200,10 +187,8 @@ button, button:active, button:focus{
 	justify-content: space-around;
 	font-size: 1.2em;
 	cursor: pointer;
-	/*flex-wrap: wrap;*/
 }
 .qual_list{
-	/*display: inline-block;*/
 	width: 30%;
 	max-width: 300px;
 	vertical-align: top;
@@ -222,10 +207,6 @@ button, button:active, button:focus{
 .qual_list:hover hr{
 	border-color: #f00;
 }
-/*.qual_list_pic{
-	width: 100%;
-	height: auto;
-}*/
 .qual_list img{
 	width: 100%;
 	max-height: 180px;
@@ -245,7 +226,6 @@ button, button:active, button:focus{
 	font-size: 1.2em;
 }
 .clients_list{
-	/*display: inline-block;*/
 	position: relative;
 	width: 19%;
 	max-width: 150px;
@@ -262,9 +242,6 @@ button, button:active, button:focus{
     top: 0;
     bottom: 0;
     right: 0;
-	/*display: flex;
-  	align-items: center;
-  	justify-content: space-around;*/
 }
 #md{
 	max-width: 140px;
@@ -281,7 +258,6 @@ button, button:active, button:focus{
 	font-size: 1.25rem;
 }
 .replace_list{
-	/*display: inline-block;*/
 	width: 100%;
 	max-width: 820px;
 	margin: 0 auto;
@@ -330,25 +306,17 @@ button, button:active, button:focus{
 }
 .gallery_block{
 	width: 100%;
-	/*display: flex;*/
 	justify-content: center;
 	flex-flow: column;
 }
 .big_pic{
-	width: 100%;/*780px;*/
+	width: 100%;
 	max-width: 700px;
 	margin: 0 auto;
-	/*height: 500px;*/
-	/*display: flex;*/
 	vertical-align: top;
 }
-/*.img{
-	width: 400px;
-	margin: 0 auto;
-}*/
 .big_pic img{
 	width: 100%;
-	/*max-width: 720px;*/
 	height: 100%;
 	margin: 0 auto;
 	padding: 1%;
@@ -356,27 +324,20 @@ button, button:active, button:focus{
 	box-shadow: 0 0 10px #d6d2d2;
 }
 .thumbs_list{
-	width: 80%;/*140px;*/
+	width: 80%;
 	max-width: 620px;
 	display: flex;
-	/*flex-wrap: nowrap;*/
-	/*vertical-align: top;*/
 	margin: 5px auto;
-	/*overflow-y: auto;*/
 	overflow: hidden;
 	-ms-overflow-style: none;
 	scrollbar-width: none;
-	/*opacity: .7;*/
 }
 .thumbs_list::-webkit-scrollbar {
   	display: none;
 }
 .thumbs_list img{
-	/*width: 100%;*/
 	max-width: 110px;
 	max-height: 60px;
-	/*margin: 3px auto;*/
-	/*display: block;*/
 	padding: 2px;
 	border: 1px solid #d6d2d2;
 	box-shadow: 0 0 10px #d6d2d2;
@@ -394,10 +355,7 @@ button, button:active, button:focus{
 	background-color: rgba(0, 0, 0, 0.4);
 	height: 100%;
 	padding-top: 10%;
-	/*position: relative;*/
-	/*width: 580px;*/
 	margin: 0 auto;
-	/*top: 110px;*/
 	text-align: center;
 	color: #fff;
 }
@@ -424,7 +382,6 @@ button, button:active, button:focus{
 	font-size: 1.17rem;
 }
 #contact_us{
-	/*margin-top: 10px;*/
 	display: flex;
 }
 .map{
@@ -456,7 +413,6 @@ button, button:active, button:focus{
 	justify-content: space-between;
 }
 .footer_logo{
-	/*width: 49px;*/
 	margin-left: 20px;
 	margin-top: 35px;
 }
@@ -495,11 +451,6 @@ button, button:active, button:focus{
 	.repair_list{
 		font-size: 1.1rem;
 	}
-	/*.but{
-		font-size: 1.3rem;
-		padding: 15px 130px;
-		margin-top: 25px;
-	}*/
 }
 @media (max-width: 810px){
 	.header_text{
@@ -630,9 +581,6 @@ button, button:active, button:focus{
 		display: flex;
 		justify-content: center;
 	}
-	/*.top_pic_text h4{
-		margin-top: 15%;
-	}*/
 
 }
 @media (max-width: 374px){

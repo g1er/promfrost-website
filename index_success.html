@@ -11,10 +11,10 @@
 
 	<link rel="stylesheet" type="text/css" href="jQuery-mousewheel/jQuery-mousewheel/jquery.mCustomScrollbar.min.css">
 
-	<link rel="stylesheet" type="text/css" href="style_v3.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body onload='getYear()'>
+<body onload='funcStart()'>
 
 	<header>
 		<div class="body_container header_block">
@@ -104,11 +104,11 @@
 							<img src="images/spareparts.jpg" />
 					<span class="fixed_head"><p><b>Оригинальные запчасти</b></p></span><hr>При ремонте и монтаже мы используем только проверненные временем и опытом запчасти от ведущих брендов и производителей оборудования</div>
 					<div class="qual_list">
-							<img src="images/min_terms.jpg" />
+							<img src="images/min_termsr2.jpg" />
 					<span class="fixed_head"><p><b>Минимальные сроки</b></p></span><hr>Мобильные бригады, укомплектованные необходимым оборудованием, всегда готовы оперативно выехать на место для определения и решения проблемы
 					</div>
 					<div class="qual_list">
-							<img src="images/comfort.jpg" />
+							<img src="images/comfort_1.jpg" />
 					<span class="fixed_head"><p><b>Выгодные условия</b></p></span><hr>К каждому клиенту мы подходим индивидуально и всегда готовы обсудить отдельные условия, исходя из особенностей конкретного случая</div>
 				</div>
 		</div>
@@ -260,17 +260,26 @@
 	</script>
 	<!-- End -->
 
-	<!-- Set current year in footer -->
 	<script type="text/javascript">
-		var par = document.getElementById('years');
+		// Set current year in footer
 
 		function getYear(){
+			var par = document.getElementById('years');
 			var newYear = new Date();
 			var currentYear = newYear.getFullYear();
 			par.innerText = "2007-" + currentYear + "г";
 		}
+		// End
+
+		function sendOk(){
+			alert("Заявка успешно отправлена");
+		}
+
+		function funcStart(){
+			getYear();
+			sendOk();
+		}
 	</script>
-	<!-- End -->
 
 </body>
 </html>
